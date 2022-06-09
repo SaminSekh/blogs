@@ -1,4 +1,125 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --wht: rgb(229, 229, 229);
+    --blc: rgb(0, 0, 0);
+    --blu: rgb(3, 3, 255);
+    --gry: rgb(66, 65, 65);
+    --pnk: rgb(247, 77, 208);
+    --vio: rebeccapurple;
+    --grn: rgb(1, 144, 1);
+}
 
+                    /* navbar starting form here */
+#navbar{
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--blc);
+    z-index: 1;
+}
+#logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 64px;
+    height: 43px;
+    margin-left: 5px;
+    background-image: url('../images/slogo.png');
+    background-size: cover;
+}
+                    /*MENU ITEMS STARTTING FROM HERE*/
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#menu>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+}
+#menu>ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+#menu>ul>li:hover{
+    background-color: var(--gry);
+}
+#menu>ul>li>a{
+    text-decoration: none;
+    color: var(--wht);
+    font-family: "apercu",sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    order: 1;
+}
+#check{
+    display: none;
+}
+#check:checked ~ #menu{
+    display: flex;
+  }
+#social{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 15%;
+    overflow: hidden;
+    /* background-color: green; */
+}
+#social>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+#social>ul>li{
+    margin: 0px 5px;
+    padding: 7px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .5s;
+}
+#social>ul>li:hover{
+    background-color: var(--gry);
+}
+#social>ul>li>a{
+    color: var(--wht);
+    font-size: 1.3rem;
+}
 					/* blog page css*/
 
 
