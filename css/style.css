@@ -191,3 +191,131 @@ body{
 .cl:hover{
     color: var(--blu);
 }
+
+
+
+
+	/*media for nav bar and main interface*/
+
+@media screen and (max-device-width: 319px){
+	#logo{
+		width: 55px;
+		height: 40px;
+	} 
+	.checkbtn{
+		display: block;
+	}
+	#menu{
+		display: none;
+		margin: 0;
+		background-color: #000668;
+		width: 100%;
+		order: 3;
+	}
+	#menu>ul{
+		flex-direction: column;
+	}
+	#menu>ul>li{
+		margin: 10px 0px;
+		padding: 10px 10px;
+	}
+	#social{
+		display: none;
+	}
+	#bgimg{
+		width: 100%;
+		height: 70vh;
+	}
+	.dia{
+		width: 100%;
+		overflow: hidden;
+	}
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+	.checkbtn{
+		display: block;
+	}
+	#logo{
+		width: 65px;
+		height: 45px;
+	}
+	#menu{
+		display: none;
+		margin: 0;
+		background-color: #000668;
+		width: 100%;
+		order: 3;
+	}
+	#menu>ul{
+		flex-direction: column;
+	}
+	#menu>ul>li{
+		margin: 10px 0px;
+		padding: 10px 10px;
+	}
+	#social{
+		display: none;
+	}
+	#bgimg{
+		width: 100%;
+		height: 80vh;
+	}
+	.dia{
+		width: 100%;
+		overflow: hidden;
+	}
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 602px){
+	.checkbtn{
+		display: block;
+	}
+	#logo{
+		width: 65px;
+		height: 45px;
+	}
+	#menu{
+		display: none;
+		margin: 0;
+		background-color: #000668;
+		width: 100%;
+		order: 3;
+	}
+	#menu>ul{
+		flex-direction: column;
+	}
+	#menu>ul>li{
+		margin: 10px 0px;
+		padding: 10px 10px;
+	}
+	#social{
+		display: none;
+	}
+	#bgimg{
+		width: 70%;
+		height: 90vh;
+	}
+	.dia{
+		width: 100%;
+		overflow: hidden;
+	}	
+}	
+@media screen and (min-device-width: 603px) and (max-device-width: 768px){
+	#menu>ul>li{
+		padding: 0px 5px;
+	}
+	#logo{
+		width: 65px;
+		height: 45px;
+	}
+	#bgimg{
+		width: 50%;
+		height: 100vh;
+	}
+	#social{
+		display: none;
+	}
+	.dia{
+		width: 50%;
+		overflow: hidden;
+	}	
+}	
